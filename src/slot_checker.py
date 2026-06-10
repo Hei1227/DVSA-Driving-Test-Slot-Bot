@@ -87,7 +87,7 @@ def _make_humanizer(page: Page):
 
 
 # ---------------------------------------------------------------------------
-# Human typing — NO intentional typos, just variable speed
+# Human typing 
 # ---------------------------------------------------------------------------
 
 async def human_type(page: Page, selector: str, text: str):
@@ -995,14 +995,14 @@ async def run_booking(
         challenge_last_cycle = challenge_this_cycle
 
         if challenge_this_cycle:
-            cooldown = random.uniform(300, 600)    # 5–10 min
+            cooldown = random.uniform(350, 650)    # 5–10 min
             print(f"Challenge detected this cycle — cooling down for {cooldown:.0f}s before retrying...\n")
             slices = random.randint(3, 5)
             for _ in range(slices):
                 await asyncio.sleep(cooldown / slices)
                 await _captcha_check()
 
-        wait_seconds = random.uniform(150, 300)    # 2.5–5 min base
+        wait_seconds = random.uniform(200, 350)    # 2.5–5 min base
         print(f"Cycle {cycle} done — no slots found. Retrying in {wait_seconds:.0f}s...\n")
 
         slice_count = random.randint(4, 7)

@@ -63,6 +63,11 @@ async def warm_up_browsing(page):
         "https://www.bbc.co.uk/news",
         "https://www.skysports.com",
         "https://www.met.gov.uk",
+        "https://www.nhs.uk",
+        "https://www.ebay.co.uk",
+        "https://www.tripadvisor.co.uk",
+        "https://www.zoopla.co.uk",
+        "https://www.asos.com"
     ]
     warm_up_sites = random.sample(_WARM_UP_POOL, k=random.randint(3, 5))
 
