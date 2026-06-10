@@ -1,0 +1,8 @@
+# List of DVSA test centres to monitor.
+# The bot searches them in order every cycle and books the first available slot.
+# Use the exact centre name as it appears on the DVSA booking site.
+
+centres:
+  - Isleworth (Fleming Way)
+  - Yeading (London)
+  - Greenford (London)

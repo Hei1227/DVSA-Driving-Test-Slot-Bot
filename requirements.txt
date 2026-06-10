@@ -1,0 +1,6 @@
+patchright
+pyyaml
+aiohttp
+python-dotenv
+humanization-playwright
+tzdata
